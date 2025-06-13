@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en" style="background-image: url(./gridback.png); background-repeat: repeat;">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <style>*{user-select: none;}</style>
+  <title>Dnd map maker</title>
+</head>
+<body>
+<div id="board">
+  <div id="placehold" draggable="false"
+  style="height: 0px; width:0px; position: absolute;"></div>
+</div>
+<div id="side" class="menu">
+  <div class="toolbox" id=""toolbox>
+    <div class="object">
+      <div class="image" id="box"
+      style="background-image: url(./img/box.png);"
+      onmousedown='spawnnew("url(./img/box.png)", "box")'></div>
+      <p>box</p>
+    </div>
+    <div class="object">
+      <div class="image" id="tree"
+      style="background-image: url(./img/tree.png);"
+      onmousedown='spawnnew("url(./img/tree.png)", "tree")'></div>
+      <p>tree</p>
+    </div>
+    <div class="object">
+      <div class="image" id="house"
+      style="background-image: url(./img/house.png);"
+      onmousedown='spawnnew("url(./img/house.png)", "house")'></div>
+      <p>house</p>
+    </div>
+    <div class="object">
+      <div class="image" id="plank"
+      style="background-image: url(./img/plank.png);"
+      onmousedown='spawnnew("url(./img/plank.png)", "plank")'></div>
+      <p>plank</p>
+    </div>
+    <div class="object">
+      <div class="image" id="rat"
+      style="background-image: url(./img/rat.png);"
+      onmousedown='spawnnew("url(./img/rat.png)", "rat")'></div>
+      <p>rat</p>
+    </div>
+    <div class="object">
+      <div class="image" id="ratatat"></div>
+      <p>box</p>
+    </div>
+    <div class="object">
+      <div class="image" id="ratatat"></div>
+      <p>box</p>
+    </div>
+    <div class="object">
+      <div class="image" id="ratat"></div>
+      <p>box</p>
+    </div>
+    <div class="object">
+      <div class="image" id="rata"></div>
+      <p>box</p>
+    </div>
+    <div class="object">
+      <div class="image" id="raj"></div>
+      <p>box</p>
+    </div>
+    <div class="object">
+      <div class="image" id="ra"></div>
+      <p>box</p>
+    </div>
+    <div class="object">
+      <div class="image" id="r"></div>
+      <p>box</p>
+    </div>
+    <div class="object">
+      <div class="image" id="re"></div>
+      <p>box</p>
+    </div>
+    <div class="object">
+      <div class="image" id="rea"></div>
+      <p>box</p>
+    </div>
+    <div class="object">
+      <div class="image" id="real"></div>
+      <p>box</p>
+    </div>
+  </div>
+   <div id="sidebar" class="menu">
+    <div class="object">
+      <button onclick="unload()">save</button>
+    </div>
+    <div class="object">
+      <button onclick="load()">load</button>
+    </div>
+  </div>
+</div>
+<script src = "./canvas.js"></script>
+</body>

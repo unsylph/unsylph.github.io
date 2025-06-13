@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="math.css">
+  <title>Unsylph</title>
+</head>
+<body>
+  <div class="topbar">
+    <a href="../../">Home</a>
+    <a href="../Dndmapmaker/">D&D Map Maker</a>
+  </div>
+  <h1>work in progress</h1>
+  <p>
+    This is where I shall put my math website when it is complete.
+    Not sure if it'll be programmed in JS or php, both seem really fun and I want to work on both
+    anyways simple test below
+  </p>
+  <select name="math mode", id="mode", onchange='newquestion()'>
+    <option value="0">Addition</option>
+    <option value="1">Subtraction</option>
+    <option value="2">Multiplication</option>
+    <option value="3">Division</option>
+    <option value="4">Exponets</option>
+  </select>
+  <h4 id="question"></h4>
+  <script src = "./createmath.js"></script>
+  <!--<input type="number" id="Answer">-->
+  <button type="button" id="submit" onclick='submit()'>submit</button>
+  <p id="response"></p>
+</body>
